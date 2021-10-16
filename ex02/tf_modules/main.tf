@@ -1,10 +1,10 @@
 module "slackoapp" {
   source      = "./modules/slacko-app"
-  vpc_id      = "vpc-03c45becab303a4fc"
-  subnet_cidr = "10.0.102.0/24"
+  vpc_id      = "vpc-0279eb78007c2fabc"
+  subnet_cidr = var.subnet_cidr
   name        = "Slacko"
   tags = {
-    Aluno     = "Valdir Bitar"
+    Aluno     = "Paulo Menezes"
     Turma     = "CL0506"
     Exercicio = "Slacko-mdules"
   }
